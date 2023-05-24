@@ -24,13 +24,3 @@ btnAdd.addEventListener('click', function() {
   table.innerHTML += form;
 })
 
-function deleteData(e) {
-  if(!e.target.classList.contains('remove')) {
-    return;
-  }
-  
-  const btn = e.target;
-  btn.remove();
-}
-
-remove.addEventListener('click', deleteData());

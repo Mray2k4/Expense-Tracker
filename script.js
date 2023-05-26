@@ -23,11 +23,14 @@ btnAdd.addEventListener('click', function() {
                   <td>${date}</td>
                   <td>${descript}</td>
                   <td>${category}</td>
-                  <td>$${amount}</td>
+                  <td>${'$'+ amount}</td>
                   <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
                 </tr>`;
 
-            
+                dateInput.value = "";
+                descriptInput.value = "";
+                categoryInput.value = "";
+                amountInput.value = "";
   
                 
   

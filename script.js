@@ -1,11 +1,11 @@
 const btnAdd = document.getElementById('btnAdd');
 const table = document.getElementById('table');
 
-//const dateInput = document.getElementById('date');
+const dateInput = document.getElementById('date');
 const descriptInput = document.getElementById('descript');
 const categoryInput = document.getElementById('category');
 const amountInput = document.getElementById('amount');
-//const remove = document.getElementById('remove');
+
 
 function deleteRow(row) {
   const r = row.parentNode.parentNode.rowIndex;
@@ -13,13 +13,14 @@ function deleteRow(row) {
 }
 
 btnAdd.addEventListener('click', function() {
+  const date = dateInput.value;
   const descript = descriptInput.value;
   const category = categoryInput.value;
   const amount = amountInput.value;
-  //const remove = document.getElementById('remove');
+  
   
   const form = `<tr>
-                  <td></td>
+                  <td>${date}</td>
                   <td>${descript}</td>
                   <td>${category}</td>
                   <td>${amount}</td>

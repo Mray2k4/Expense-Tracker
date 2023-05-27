@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(135, 228, 23);
+  background-color: #bd322d;
 }
 
 tbody {
@@ -31,6 +31,10 @@ tbody {
   table th {
     background: lightblue;
     padding: 4px 30px 4px 8px;
-    
   }
+
+#data, input, button{
+  height: 25px;
+}
+
 
